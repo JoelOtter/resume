@@ -1,0 +1,199 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Joel}{Auterson}{\href{mailto:joel.auterson@gmail.com}{joel.auterson@gmail.com}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+Golang \textbullet{}   Java \textbullet{} C\# \textbullet{} C/C++/ObjC \\
+JS/TypeScript \textbullet{} HTML/CSS \textbullet{} Protobuf \\
+Shell, Python, Ruby, etc.
+\sectionsep
+\subsection{Frameworks/Libraries/etc}
+gRPC \textbullet{} LibGDX \textbullet{} React/Redux \\
+Metal \textbullet{} Redis \textbullet{} Docker \& Kubernetes\\
+Android \textbullet{} iOS \textbullet{} macOS \textbullet{} Linux\\
+Google Cloud platform
+\sectionsep
+\subsection{do you know git?}
+Yes.
+\sectionsep
+\subsection{Do you know Unity or UE4?}
+I have dabbled but I'm not very experienced with those.
+\sectionsep
+\subsection{Tabs or spaces?}
+I thought this was a Skills section?
+\sectionsep
+\subsection{Nice dodge.}
+Cheers.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+GitHub:// \href{http://github.com/JoelOtter}{\bf{JoelOtter}} \\
+Twitter://  \href{http://twitter.com/JoelOtter}{\bf{@JoelOtter}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SIDE PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Side Projects}
+\subsection{Termloop}
+A pure Go game engine for the terminal. Provides a renderloop and tools for making terminal-based games.\\
+\href{http://github.com/JoelOtter/termloop}{\bf{github.com/JoelOtter/termloop}}
+\sectionsep
+\subsection{Kajero}
+Interactive notebooks for the web,\\with clever graphing.\\
+\href{http://github.com/JoelOtter/kajero}{\bf{github.com/JoelOtter/kajero}}
+\sectionsep
+
+\section{Personal}
+I like poetry - I run a night in Hammersmith, had a book out in 2017, and am a Barbican Young Poet. I also like mountains and miss them when I'm in London.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.63\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{it me}
+\sectionsep
+I'm an experienced backend programmer, familiar with working in the cloud and at scale, and also have experience in programming games.\\
+I used to be a web programmer. Please don't ask me to work on the web again. I still have nightmares about NPM.
+\sectionsep
+
+\section{Experience}
+
+\runsubsection{Improbable}
+\descript{| Software Engineer}
+\location{September 2016 - Present | London, UK}
+\begin{tightemize}
+\item Started working on WebTools team - working on full-stack web applications such as the Inspector. TypeScript, CSS \& Golang.
+\item On Operate team, worked on various backend services and command line tools around authentication, account management and billing. Primarily Golang with some TypeScript.
+\item On Worker team, worked on adding metrics to the core network layer of the SpatialOS SDK. Worked primarily with C/C++.
+\item On Production team, worked with partner game studios to build authentication and inventory services. Golang, C\#, Docker, Kubernetes, Prometheus \& PostgreSQL.
+\item Currently on Online Services team. Designed and built a queueing and matchmaking system. Same technologies as Production, plus Redis.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Bearwaves}
+\descript{| Programmer \& Producer}
+\location{April 2016 - Present | London, UK}
+\begin{tightemize}
+\item Director of Bearwaves Ltd., a three-person game studio.
+\item Programmer and producer roles on \href{https://store.steampowered.com/app/863400/Feud}{\bf{Feud}}, releasing in 2019 on Windows, macOS, Linux, iOS and Android.
+\item Experience working with LibGDX, iOS, Protobuf, Golang, Steamworks and PlayFab.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{VMware}
+\descript{| Software Engineering Intern}
+\location{April 2015 – September 2015 | London, UK}
+\begin{tightemize}
+\item Worked on Hybrid DaaS team, building solutions for deploying and managing virtual desktops.
+\item Gained experience working on a large-scale cloud infrastructure, on both backend and frontend.
+\item Java, AngularJS, Jersey, MongoDB
+\end{tightemize}
+\sectionsep
+
+\runsubsection{MOO}
+\descript{| Software Development Intern }
+\location{July 2014 – September 2014 | London, UK}
+\begin{tightemize}
+\item Worked on the Digital Crew, maintaining a previous product and helping in the early development stages of a newer one.
+\item Gained experience with Python, Django, MySQL, CSS/Less, Jinja, Flask and React, working on the full stack. Experienced Agile and Scrum development.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\runsubsection{Imperial College London}
+\descript{| MEng Computing}
+\location{First-class Honours | September 2012 - June 2016}
+\sectionsep{}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+
